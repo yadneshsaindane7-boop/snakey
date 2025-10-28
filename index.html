@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakey - A Hibro-Labs Venture</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-wrapper">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <h1 class="game-title">Snakey - A Hibro-Labs Venture</h1>
+            <div class="high-score-display">
+                High Score: <span id="highScoreStart">0</span>
+            </div>
+            <div class="instructions">
+                <p>🎮 Use Arrow Keys or WASD to Move</p>
+                <p>🍎 Eat Food to Grow</p>
+                <p>⚡ Avoid Walls and Yourself</p>
+            </div>
+            <button class="start-btn" onclick="startGame()">START GAME</button>
+            <div class="credit">Press SPACE to Start</div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <div class="score-panel">
+                <div class="score-item">
+                    <span class="label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">High:</span>
+                    <span id="highScore">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">Level:</span>
+                    <span id="level">1</span>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+                <div class="control-row">
+                    <button class="control-btn" onclick="changeDirection('up')">↑</button>
+                </div>
+                <div class="control-row">
+                    <button class="control-btn" onclick="changeDirection('left')">←</button>
+                    <button class="control-btn" onclick="changeDirection('down')">↓</button>
+                    <button class="control-btn" onclick="changeDirection('right')">→</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="screen">
+            <h2 class="game-over-title">GAME OVER</h2>
+            <div class="final-stats">
+                <div class="stat">
+                    <span class="stat-label">Final Score:</span>
+                    <span id="finalScore" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">High Score:</span>
+                    <span id="finalHighScore" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Snake Length:</span>
+                    <span id="snakeLength" class="stat-value">0</span>
+                </div>
+                <div id="newHighScore" class="new-high-score">🎉 NEW HIGH SCORE! 🎉</div>
+            </div>
+            <button class="restart-btn" onclick="restartGame()">PLAY AGAIN</button>
+            <div class="credit">Press SPACE to Restart</div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+    <!-- ... existing HTML ... -->
+
+    <footer class="footer">
+        Created By: Yadnesh Saindane
+        || A Hibro-Labs Production ||
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
