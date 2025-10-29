@@ -12,7 +12,7 @@ let food = { x: 0, y: 0, type: 'regular' };
 let score = 0;
 let highScore = 0;
 let level = 1;
-let speed = 130;
+let speed = 100;
 let gameLoop = null;
 let gameRunning = false;
 let particles = [];
@@ -419,4 +419,5 @@ function playSound(frequency, duration) {
         console.log('Audio not available');
     }
 }
+
 
