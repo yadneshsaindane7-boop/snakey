@@ -305,9 +305,9 @@ h1,h2, .game-title, .game-over-title {
     bottom: 0;
     width: 100vw;
     z-index: 9999;
-    background: rgba(24,24,28,0.38);
+    background: rgba(153, 188, 207, 0.896);
     text-align: center;
-    color: #fff;
+    color: #7804f4;
     font-size: 1.07rem;
     letter-spacing: 0.5px;
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
@@ -322,4 +322,3 @@ h1,h2, .game-title, .game-over-title {
 body {
     padding-bottom: 48px;
 }
-
