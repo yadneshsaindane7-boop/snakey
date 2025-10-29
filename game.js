@@ -12,7 +12,7 @@ let food = { x: 0, y: 0, type: 'regular' };
 let score = 0;
 let highScore = 0;
 let level = 1;
-let speed = 100;
+let speed = 200;
 let gameLoop = null;
 let gameRunning = false;
 let particles = [];
@@ -140,7 +140,7 @@ function initializeGame() {
     nextDirection = { x: 1, y: 0 };
     score = 0;
     level = 1;
-    speed = 150;
+    speed = 200;
     particles = [];
     
     updateScore();
@@ -244,7 +244,7 @@ function levelUp() {
     document.getElementById('level').textContent = level;
     
     // Increase speed
-    if (speed > 70) {
+    if (speed > 120) {
         speed -= 10;
         clearInterval(gameLoop);
         gameLoop = setInterval(update, speed);
@@ -419,5 +419,4 @@ function playSound(frequency, duration) {
         console.log('Audio not available');
     }
 }
-
 
