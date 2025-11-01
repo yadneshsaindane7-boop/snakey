@@ -1,4 +1,6 @@
 # Snakey App By Yadnesh Saindane
+![Landing Page](snakey.jpg)
+
 
 A classic snake game web application built with HTML, CSS, and JavaScript, offering a simple and fun way to pass time and test reaction skills.
 
@@ -44,3 +46,4 @@ This project is licensed under the terms described in the [LICENSE](LICENSE) fil
 ---
 
 Made with ❤️ by Yadnesh Saindane
+
